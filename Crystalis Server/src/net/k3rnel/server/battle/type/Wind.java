@@ -2,10 +2,10 @@ package net.k3rnel.server.battle.type;
 
 import net.k3rnel.server.battle.Type;
 
-public class Fire extends Type {
+public class Wind extends Type {
 	
-	public Fire() {
-		setName("Fire");
+	public Wind() {
+		setName("Wind");
 	}
 	
 	@Override
@@ -13,11 +13,11 @@ public class Fire extends Type {
 		// TODO Auto-generated method stub
 		switch (opponent){
 		case FIRE :
-			return (Effectiveness.IMPERVIOUS);
+			return (Effectiveness.NOT_EFFECTIVE);
 		case WATER :
 			return (Effectiveness.EFFECTIVE);
 		case EARTH :
-			return (Effectiveness.NOT_EFFECTIVE);
+			return (Effectiveness.NEUTRAL);
 		case WIND :
 			return (Effectiveness.NEUTRAL);
 		}

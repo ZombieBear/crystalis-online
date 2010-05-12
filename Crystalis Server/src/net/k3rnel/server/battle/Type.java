@@ -1,7 +1,14 @@
 package net.k3rnel.server.battle;
 
 public abstract class Type {
-	String m_name;
+	private String m_name;
+	
+	public enum TypeName {
+		FIRE,
+		WATER,
+		EARTH,
+		WIND
+	}
 	
 	public enum Effectiveness {
 		EFFECTIVE,
@@ -14,12 +21,22 @@ public abstract class Type {
 	 * Returns the type
 	 * @return name of the type
 	 */
-	public abstract String getName();
+	public String getName() {
+		return m_name;
+	}
+	
+	/**
+	 * Sets the move name
+	 * @param name
+	 */
+	public void setName(String name){
+		m_name = name;
+	}
 	
 	/**
 	 * Returns the level of effectiveness against another type
 	 * @param opponent
 	 * @return the level of effectiveness against another type
 	 */
-	public abstract Effectiveness isEffective(Type opponent);
+	public abstract Effectiveness isEffective(TypeName opponent);
 }

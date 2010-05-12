@@ -2,10 +2,10 @@ package net.k3rnel.server.battle.type;
 
 import net.k3rnel.server.battle.Type;
 
-public class Fire extends Type {
+public class Earth extends Type {
 	
-	public Fire() {
-		setName("Fire");
+	public Earth() {
+		setName("Earth");
 	}
 	
 	@Override
@@ -17,7 +17,7 @@ public class Fire extends Type {
 		case WATER :
 			return (Effectiveness.EFFECTIVE);
 		case EARTH :
-			return (Effectiveness.NOT_EFFECTIVE);
+			return (Effectiveness.NEUTRAL);
 		case WIND :
 			return (Effectiveness.NEUTRAL);
 		}

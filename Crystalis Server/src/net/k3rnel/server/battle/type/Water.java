@@ -2,10 +2,10 @@ package net.k3rnel.server.battle.type;
 
 import net.k3rnel.server.battle.Type;
 
-public class Fire extends Type {
+public class Water extends Type {
 	
-	public Fire() {
-		setName("Fire");
+	public Water() {
+		setName("Water");
 	}
 	
 	@Override
@@ -13,9 +13,9 @@ public class Fire extends Type {
 		// TODO Auto-generated method stub
 		switch (opponent){
 		case FIRE :
-			return (Effectiveness.IMPERVIOUS);
-		case WATER :
 			return (Effectiveness.EFFECTIVE);
+		case WATER :
+			return (Effectiveness.NEUTRAL);
 		case EARTH :
 			return (Effectiveness.NOT_EFFECTIVE);
 		case WIND :
