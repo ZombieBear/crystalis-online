@@ -15,7 +15,7 @@ public class Fire extends Type {
 		case FIRE :
 			return (Effectiveness.IMPERVIOUS);
 		case WATER :
-			return (Effectiveness.EFFECTIVE);
+			return (Effectiveness.NOT_EFFECTIVE);
 		case EARTH :
 			return (Effectiveness.NOT_EFFECTIVE);
 		case WIND :
